@@ -160,7 +160,7 @@ export default function AdminPage() {
               placeholder="ค้นหา ชื่อ / Email..."
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              className="border border-gray-200 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 w-56"
+              className="border border-gray-200 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 w-56 text-gray-800 bg-white"
             />
             <button
               onClick={() => { setShowAddModal(true); setAddError(''); setAddForm(emptyForm); }}
@@ -280,7 +280,7 @@ export default function AdminPage() {
                   type="text"
                   value={editName}
                   onChange={(e) => setEditName(e.target.value)}
-                  className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
+                  className="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm text-gray-800 bg-white"
                 />
               </div>
               <div className="flex gap-2 pt-2">
@@ -314,7 +314,7 @@ export default function AdminPage() {
                   required
                   value={addForm.name}
                   onChange={(e) => setAddForm({ ...addForm, name: e.target.value })}
-                  className="w-full border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-800 bg-white"
                   placeholder="กรอกชื่อ-นามสกุล"
                 />
               </div>
@@ -325,7 +325,7 @@ export default function AdminPage() {
                   required
                   value={addForm.email}
                   onChange={(e) => setAddForm({ ...addForm, email: e.target.value })}
-                  className="w-full border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-800 bg-white"
                   placeholder="กรอก Email"
                 />
               </div>
@@ -336,7 +336,7 @@ export default function AdminPage() {
                   required
                   value={addForm.password}
                   onChange={(e) => setAddForm({ ...addForm, password: e.target.value })}
-                  className="w-full border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-800 bg-white"
                   placeholder="อย่างน้อย 6 ตัวอักษร"
                 />
               </div>
@@ -345,7 +345,7 @@ export default function AdminPage() {
                 <select
                   value={addForm.role}
                   onChange={(e) => setAddForm({ ...addForm, role: e.target.value })}
-                  className="w-full border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 text-gray-800 bg-white"
                 >
                   <option value="user">👤 User</option>
                   <option value="admin">🛠 Admin</option>
